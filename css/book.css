@@ -1,0 +1,138 @@
+        html {
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        body{
+            background:#fff;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        #book-container{
+            width:960px;
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+        #magazine-container {
+            height: 560px;
+            margin: 10px;
+        }
+
+        #magazine{
+            height:540px;
+            margin: 10px;
+            vertical-align: middle;
+
+            background-color: #FEFEFE; 
+        }
+
+        #magazine .turn-page{
+
+               background-color: #FEFEFE; 
+
+               background-image: url(images/fallback-gradient.png); 
+               background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E2E2E2), to(#FEFEFE));
+               background-image: -webkit-linear-gradient(top, #E2E2E2, #FEFEFE); 
+               background-image:    -moz-linear-gradient(top, #E2E2E2, #FEFEFE);
+               background-image:     -ms-linear-gradient(top, #E2E2E2, #FEFEFE);
+               background-image:      -o-linear-gradient(top, #E2E2E2, #FEFEFE);
+
+        }
+
+        #magazine .turn-page-wrapper{
+            -webkit-box-shadow:0 0 20px rgba(171,171,171,1);
+            -moz-box-shadow:0 0 20px rgba(171,171,171,1);
+            -ms-box-shadow:0 0 20px rgba(171,171,171,1);
+            -o-box-shadow:0 0 20px rgba(171,171,171,1);
+            box-shadow:0 0 20px rgba(171,171,171,1);
+        }
+
+        #magazine .cover {
+            font-family: 'Josefin Slab';
+            font-size: 3em;
+            text-align: center;
+        }
+
+        #magazine .cover p{
+            font-size: 0.5em;
+            font-style: italic;
+            margin:30px;
+        }
+
+        #magazine .inner-cover {
+            border: 1px solid gray;
+            font-family: 'Josefin Slab';
+            font-size: 1.75em;
+            text-align: center;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 90%;
+            width: 90%;
+            margin: -45% 0 0 -45%;
+            display: table;
+
+            line-height: 125%;
+        }
+
+        #magazine .inner-cover p{
+            display: table-cell;
+            vertical-align: middle;
+
+            padding: 10%;
+        }
+
+        #magazine .inner{
+            border: 1px solid gray;
+
+            font-family: 'Josefin Slab';
+            font-size: 1.5em;
+            text-align: center;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 90%;
+            width: 90%;
+            margin: -45% 0 0 -45%;
+            display: table;
+        }
+
+        #magazine .inner p{
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 10% 0 10%;
+        }
+
+        #magazine.centerStart { 
+            left: -25%; 
+            right: -25%;
+
+            transition:left 2s;
+            -moz-transition:left 2s; /* Firefox 4 */
+            -webkit-transition:left 2s; /* Safari and Chrome */
+            -o-transition:left 2s; /* Opera */ 
+
+        } 
+        #magazine.centerEnd {
+            left: 25%; 
+            right: 25%; 
+
+            transition:left 2s;
+            -moz-transition:left 2s; /* Firefox 4 */
+            -webkit-transition:left 2s; /* Safari and Chrome */
+            -o-transition:left 2s; /* Opera */ 
+        }
+
+        #magazine.second {
+            transition:left 2s;
+            -moz-transition:left 2s; /* Firefox 4 */
+            -webkit-transition:left 2s; /* Safari and Chrome */
+            -o-transition:left 2s; /* Opera */ 
+        }
+
+
+    </style>
